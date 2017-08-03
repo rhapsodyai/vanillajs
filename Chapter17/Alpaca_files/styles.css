@@ -1,0 +1,149 @@
+body {
+	font-family: Verdana, Geneva, "Bitstream Vera Sans", "DejaVu Sans", sans-serif;
+	background-color: #666666;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Cambria, "Palatino Linotype", "Book Antiqua", "URW Palladio L", serif;
+	text-shadow: #444444 2px 2px 4px;
+}
+
+#container {
+	width: 750;
+	background-color: #EBEBEB;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+}
+
+#header {
+	background-color: #91A43D;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#sidebar {
+	float: left;
+	width: 12em;
+	font-weight: bold;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#sidebar a {
+	display: block;
+	padding: 3px 3px 5px 30px;
+	background-color: #336666;
+	color: #EBEBEB;
+	border-bottom: 1px #EBEBEB solid;
+	text-decoration: none;
+	text-shadow: #264C4C 2px 2px 4px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#sidebar a:hover {
+	background-color: #EBEBEB;
+	color: #336666;
+	border-right: 3px #999999 solid;
+	border-bottom: 3px #999999 solid;
+	padding-bottom: 3px;
+	text-shadow: #264C4C 1px 1px 2px;
+}
+
+#mainContent {
+	background-color: #FFFFFF;
+	margin-left: 12em;
+	padding: 10px 20px 0 1em;
+}
+
+#footer p {
+	margin: 0;
+	padding: 10px 0;
+	background-color: #DDDDDD;
+	text-align: center;
+	font-size: .8em;
+}
+
+.clearfloat {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+}
+
+.floatRight {
+	float: right;
+	margin-left: .8em;
+}
+
+.floatLeft {
+	float: left;
+	margin-right: .8em;
+}
+
+.photo {
+	width: 200px;
+	font-size: .8em;
+	font-style: italic;
+	line-height: 1em;
+}
+
+/* Table formatting examples */
+#fiberChart tr:first-child td {
+	font-weight: bold;
+	border-bottom: 2px #006600 solid;
+}
+
+#fiberChart td {
+	padding: 10px;
+}
+
+/* Rules for non-IE browsers */
+body > #container #fiberChart {
+	border-spacing: 6px;
+}
+
+body > #container #fiberChart tr:hover {
+	background-color: #BAE8BF;
+}
+
+body > #container #fiberChart td:last-child {
+	text-align: right;
+} 
+
+/* Rules for IE only */
+#IEroot > #container #fiberChart td+td+td+td {
+	text-align: right;
+}
+
+#IEroot > #container #fiberChart {
+	border-collapse: collapse;
+}
+
+#IEroot > #container #fiberChart tr+tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr+tr+tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr+tr+tr+tr+tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr+tr+tr+tr+tr+tr+tr+tr {
+	background-color: #EEEEEE;
+	border-bottom: 2px #006600 solid;
+}
+
+#IEroot > #container #fiberChart tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr+tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr+tr+tr+tr+tr,
+#IEroot > #container #fiberChart tr+tr+tr+tr+tr+tr+tr+tr+tr+tr {
+	background-color: #BAE8BF;
+	border-bottom-width: 0;
+}

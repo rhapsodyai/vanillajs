@@ -1,0 +1,29 @@
+window.onbeforeunload = function() {
+  return "If you close this window, your flight choices will be lost!";
+}
+
+if(typeof document.oncontextmenu == "object") {
+  if(document.all) {
+    document.onmousedown = captureMousedown;
+  }
+  else {
+    document.oncontextmenu = captureMousedown;
+  }
+}
+else {
+  window.oncontextmenu = captureMousedown;
+}
+
+function captureMousedown(evt) {
+  if(evt) {
+    var mouseClick = evt.which;
+  }
+  else {
+    var mouseClick = window.event.button;
+  }
+
+  if(mouseClick==1 || mouseClick==3) {
+    alert("Menu Disabled");
+    return false;
+  }
+}
